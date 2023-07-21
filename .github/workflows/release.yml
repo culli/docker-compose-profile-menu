@@ -11,14 +11,14 @@ jobs:
       matrix:
         include:
           - os: windows-latest
-            artifact_name: docker-compose-profile-menu
+            artifact_name: docker-compose-profile-menu.exe
             asset_name: docker-compose-profile-menu-windows-x86_64
           - os: ubuntu-latest
-            artifact_name: docker-compose-profile-menu-linux-x86_64
-            asset_name: docker-compose-profile-menu
+            artifact_name: docker-compose-profile-menu
+            asset_name: docker-compose-profile-menu-linux-x86_64
           - os: macos-latest
-            artifact_name: docker-compose-profile-menu-apple-x86_64
-            asset_name: docker-compose-profile-menu
+            artifact_name: docker-compose-profile-menu
+            asset_name: docker-compose-profile-menu-apple-x86_64
     steps:
       - uses: actions/checkout@v3
       - uses: dtolnay/rust-toolchain@stable
